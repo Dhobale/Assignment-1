@@ -1,0 +1,102 @@
+  body{
+                background-color:ghostwhite;
+            }
+            h2{
+                margin: 10px;
+                color :white;
+                margin-top: 30px;
+                text-align: center;
+                padding-top: 10px;
+                height :40px;
+                background-color:darkslategrey;
+            }
+           
+            table.tables{
+                font-family: verdana;
+                font-size:15px;
+                align : center;
+                color:#333333;
+                text-align : center;
+                border-width: 2px;
+                border-color: black;
+                border-collapse: collapse;
+                width : 75%;
+                margin : 10px;
+                margin-left:auto; 
+                margin-right:auto;
+            }
+            table.tables th {
+                border-width: 1px;
+                padding: 8px;
+                color:white;
+                border-style: solid;
+                border-color: black;
+                background-color: darkslategrey;
+                }
+            table.tables td {
+                    border-width: 1px;
+                    padding: 8px;
+                    border-style: solid;
+                    border-color: black;
+                }
+            .oddrowcolor{
+                    background-color:white;
+                }
+            .evenrowcolor{
+                    background-color:gainsboro  ;
+            }
+            #category select{
+                   position :relative;
+                   left:145px;
+                   margin : 20px;
+                   width: 200px;
+                   padding: 5px;
+                   font-size: 16px;
+                   background-color: aliceblue;
+                   border: 2;
+                   border-radius: 4px;
+                   height: 28px;
+            }
+          
+           #category input[type="text"] {
+                position : relative;
+                right : 145px;
+                width: 200px;
+                height : 28px;
+                margin : 20px;
+                border-radius: 5px;
+                float : right;
+            }
+            #add button{
+                
+                width: 200px;
+                height : 28px;
+                position :relative;
+                left : 560px;                
+                border-radius: 5px;
+                margin: 10px;
+                -moz-border-radius: 5px; 
+                -webkit-border-radius: 5px; 
+            }
+            #myDialog button{
+                width: 100px;
+                height : 25px;
+                margin:10px;
+                border-radius: 5px; 
+                -moz-border-radius: 5px; 
+                -webkit-border-radius: 5px; 
+            }
+            #myDialog div intput[type="text"]{
+                width:340px;
+                border-radius: 5px;
+                height : 30px;
+            }
+            
+             #tablecolor tr td input[type="image"]{
+                width: 40px;
+                height : 25px;
+                align :center;
+                border-radius: 5px; 
+                -moz-border-radius: 5px; 
+                -webkit-border-radius: 5px; 
+            }

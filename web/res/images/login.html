@@ -1,0 +1,81 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="login.css">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+<body>
+<div id="header">
+<h1>Login Screen</h1>
+</div>
+<div id="section">
+
+<div id="login" ng-app="mainApp" ng-controller="AuthController">
+	<img src="logo-1.png">
+	<img class ="a2" src ="logo-2.png">
+	<p class ="t1"><input type="text" ng-model="email" placeholder="Email" required></p>
+	<p class ="t2"><input type="password" ng-model="password" placeholder="Password" required></p>
+	<p class ="t2"><input type="button" value="Login" ng-click="check()"/></p>
+	
+	<hr color="black" >
+	<input type="checkbox" name="stayin"> Stay Signed In 
+	
+	<div id="footer2">
+	<a href ="forgot_Password.html">Forgot Password</a>
+	</div>
+</div>
+
+<script type="text/javascript">
+    var mainApp = angular.module("mainApp", []);
+	mainApp.controller('AuthController', function($scope, CalcService) {
+        $scope.check = function() {
+        $scope.result = CalcService.check($scope.email,$scope.password);
+        }
+    });
+	
+    mainApp.factory('AuthenticationService', function() {     
+		var factory = {};  
+        factory.Authentication = function(user, pass) {
+		
+		var login = ([{
+						"email": "shailesh@gmail.com",
+						"password": "shailesh"
+						},
+						{
+						"email": "suraj@gmail.com",
+						"password": "suraj"
+						},
+						{
+						"email": "admin@gmail.com",
+						"password": "admin"
+						}]);
+		var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+		var flag=0;
+		if(re.test(user)){
+            var i=0;
+			for(i=0;i<login.length;i++)
+			{
+				if(user == login[i].email && pass == login[i].password)
+					flag=1;
+			}
+			if(flag==1)
+                window.location = 'home.html'
+			else
+				alert("Login Failed");
+        }
+		else{
+			alert("Invalid Email Id.....!");
+		}
+    }
+        return factory;
+    }); 
+
+    mainApp.service('CalcService', function(AuthenticationService){
+        this.check = function(user,pass) { 
+        return AuthenticationService.Authentication(user,pass); 
+        }
+    });
+</script>
+</div>
+</body>
+</html>
+

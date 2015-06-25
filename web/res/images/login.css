@@ -1,0 +1,92 @@
+#header {
+    background-color:orange;
+    color:white;
+    text-align:center;
+    padding:5px;
+	height : 200px;
+}
+
+
+#login{
+	top : -70px;
+	position:relative;
+	background-color: #F0F0F0;
+    width: 300px;
+    padding: 25px;
+    border: 25px solid lightgrey;
+    margin-left: auto;
+	margin-right : auto;
+	border-style: solid;
+    border-width: 1px;
+	margin-top :0px;
+}
+#section {
+height: 430;
+	padding:10px;	 	 
+	background-color: lightgrey;
+}
+
+#footer2{
+margin-top:15px;
+float:right;
+}
+
+p.t1{
+	padding-left : 20px;
+	padding-top : 20px;
+	padding-bottom : 10px;
+	width : 400px;
+	}
+p.t2{
+	padding-left : 20px;
+	padding-bottom : 10px;
+	width : 400px;
+	}
+input[type="text"] {
+    width: 250px;
+	height : 35px;
+	border-radius: 5px; 
+}
+input[type="password"] {
+    width: 250px;
+	height : 35px;
+	border-radius: 5px; 
+}
+
+input[type="button"] {
+    width: 250px;
+	height : 35px;
+	border-radius: 5px; 
+-moz-border-radius: 5px; 
+-webkit-border-radius: 5px; 
+
+}
+
+input[type="button"]:hover {
+background-color: orange;
+}
+
+div img {
+   padding-left : 50px;
+   height : 30px;
+   width  : 35px;
+ }
+div img.a2{
+padding-left : 10px;
+   height : 30px;
+   width  : 100px
+   }
+div a{
+   position:left;
+   }
+
+
+ input[type=checkbox]
+{
+ margin-top :15px;
+ -ms-transform: scale(1.5); /* IE */
+ -moz-transform: scale(1.5); /* FF */
+ -webkit-transform: scale(1.5); /* Safari and Chrome */
+ -o-transform: scale(1.5); /* Opera */
+ padding: 5px;
+}

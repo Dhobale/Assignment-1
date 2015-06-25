@@ -1,0 +1,13 @@
+
+var login='[
+{"email": "Shailesh@gmail.com",
+"password": "shailesh"
+},
+{
+"email": "Suraj@gmail.com",
+"password": "suraj"
+},
+{
+"email": "admin@gmail.com",
+"password": "admin"
+}]';

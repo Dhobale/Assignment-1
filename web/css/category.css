@@ -1,0 +1,110 @@
+#body{
+    background-color:ghostwhite;
+}
+h2{
+    margin: 10px;
+    color :white;
+    margin-top: 40px;
+    text-align: center;
+    height :35px;
+    padding-top: 10px;
+    background-color:darkslategrey;
+}
+
+table.tables{
+    font-family: verdana;
+    font-size:15px;
+    align : center;
+    color:#333333;
+    text-align : center;
+    border-width: 2px;
+    border-color: black;
+    border-collapse: collapse;
+    width : 75%;
+    margin : 10px;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+table.tables tr{
+    line-height : 35px;
+    
+}
+    
+table.tables th {
+    line-height: 30px;
+    height: 25px;
+    border-width: 1px;-
+    padding: 8px;
+    color : white;
+    border-style: solid;
+    border-color: black;
+    background-color: darkslategrey;
+}
+table.tables td {
+    height: 20px;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: black;
+}
+.oddrowcolor{
+    background-color:white;
+}
+.evenrowcolor{
+    background-color:gainsboro  ;
+}
+
+#tablecolor tr td input[type="image"]{
+    width: 25px;
+    padding-left: 20px;
+    height : 25px;
+    align :center;
+    border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+}
+div input[type="text"] {
+    position : relative;
+    right : 140px;
+    width: 200px;
+    height : 28px;
+    margin : 30px;
+    border-radius: 5px;
+    float : right;
+}
+#add button{
+    position : relative;
+    left:140px;
+    width: 200px;
+    height : 28px;
+    border-radius: 5px;
+    margin: 30px;
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+}
+#myDialog{
+    background-color:darkgray
+}
+#myDialog button{
+    width: 100px;
+    height : 25px;
+
+    border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+}
+#myDialog intput[type="text"]{
+    width:200px;
+    border-radius: 5px;
+    height : 25px;
+}
+
+#tablecolor tr td input[type="button"]{
+    width: 70px;
+    height : 20px;
+    align :center;
+    border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+}

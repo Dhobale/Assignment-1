@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <style>
+            </style>
+        </head>
+    <body>
+        
+        <h2>List of all Category</h2>
+        
+                   
+        <div><input type="text" name="search" placeholder="Search" ></div>
+        <div id="add"><button onclick="myFunction()">Add New Category</button></div>
+        <table class="tables" id="tablecolor">
+            <tr>
+                <th>Sr.No. </th>
+                <th>Category</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Electrical</td>
+                <td><input type="image" src="edit3.png">
+                     <input type="image"  src="delete2.png"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Electronic</td>
+                <td><input type="image" src="edit3.png">
+                     <input type="image"  src="delete2.png"></td>
+            </tr>
+        </table>
+        
+        
+        <dialog id="myDialog">
+            
+                <input type="text" name="cname" placeholder="Category Name"><br>
+                <menu><button type="submit">Submit</button>     <button id="cancel" type="reset">Cancel</button></menu>
+        </dialog>
+        <!-- Javascript goes in the document HEAD -->
+<script type="text/javascript">
+    
+    
+        function myFunction() { 
+        document.getElementById("myDialog").showModal(); 
+    }
+    
+    
+   function altRows(id){
+        if(document.getElementsByTagName){  
+
+            var table = document.getElementById(id);  
+            var rows = table.getElementsByTagName("tr"); 
+
+            for(i = 0; i < rows.length; i++){          
+                if(i % 2 == 0){
+                    rows[i].className = "evenrowcolor";
+                }else{
+                    rows[i].className = "oddrowcolor";
+                }      
+            }
+        }
+    }
+        </script>
+    </body>
+</html>

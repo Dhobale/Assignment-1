@@ -1,0 +1,155 @@
+<style>
+
+body{
+    background-color : E0E0EB;
+}
+h2{
+    color :white;
+    margin-top: -14px;
+    text-align: left;
+    height :35px;
+    padding-top: 10px;
+    background-color:darkslategrey;
+}
+
+table.tables{
+    font-family: verdana;
+    font-size:15px;
+    align : center;
+    color:#333333;
+    text-align : center;
+    border-width: 2px;
+    border-color: black;
+    border-collapse: collapse;
+    width : 75%;
+    margin : 10px;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+table.tables tr{
+    line-height : 35px;
+    
+}
+    
+table.tables th {
+    line-height: 30px;
+    height: 25px;
+    border-width: 1px;-
+    padding: 8px;
+    color : white;
+    border-style: solid;
+    border-color: black;
+    background-color: darkslategrey;
+}
+table.tables td {
+    line-height: 20px;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: black;
+}
+.oddrowcolor{
+    background-color:white;
+}
+.evenrowcolor{
+    background-color:gainsboro  ;
+}
+
+#tablecolor tr td input[type="image"]{
+    width: 25px;
+    padding-left: 20px;
+    height : 25px;
+    align :center;
+    border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+}
+div input[type="text"] {
+    position : relative;
+    right : 140px;
+    width: 200px;
+    height : 28px;
+    margin : 30px;
+    border-radius: 5px;
+    float : right;
+}
+#add button{
+    position : relative;
+    left:140px;
+    width: 200px;
+    height : 28px;
+    border-radius: 5px;
+    margin: 30px;
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+}
+#myDialog{
+    background-color:darkgray
+}
+#myDialog button{
+    width: 100px;
+    height : 25px;
+
+    border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+}
+#myDialog intput[type="text"]{
+    width:200px;
+    border-radius: 5px;
+    height : 25px;
+}
+
+#tablecolor tr td input[type="button"]{
+    width: 70px;
+    height : 20px;
+    align :center;
+    border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+}
+
+</style>
+<div class="category">
+<div id="menubar"></div>
+<div>
+    <ul>
+        <li><a href="#/home">Home</a></li>
+        <li><a href="#/home/category">Category</a></li>
+        <li><a href="#/home/subcategory">SubCategory</a></li>
+        <li><a href="Product.html">Product</a></li>
+        <li><a href="HeroBaner.html">Hero Baner</a></li>
+       
+    </ul>
+</div>
+<div id="body">
+    <h2>List of all Category</h2>
+    <div>
+        <input type="text" name="search" placeholder="Search" >
+    </div>
+    <div id="add">
+        <button ng-clik()="myFunction()">Add New Category</button>
+    </div>
+    <table class="tables" id="tablecolor">
+        <tr>
+            <th>Sr.No. </th>
+            <th>Category</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Electrical</td>
+            <td><input type="image" src="res/images/edit3.png" >
+                <input type="image" src="res/images/delete2.png"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Electronic</td>
+            <td><input type="image" src="res/images/edit3.png" >
+                <input type="image" src="res/images/delete2.png"></td>
+        </tr>
+    </table>
+    
+</div>
+</div>

@@ -1,0 +1,46 @@
+#menubar{
+    background-color:darkslategray;
+    height : 40px;
+    margin-top : 40px;
+}
+div ul li a{
+    text-decoration: none;
+    color: cyan;
+
+}
+div ul li a:hover{
+    color: orange; 
+}
+div ul li a:active{
+    color: white; 
+}
+div ul li{
+    list-style: none;
+    top : -52px;
+    font-size : 20px;
+    position : relative;
+    height : 40px;
+    margin-top: 5px;
+    margin-left : 30px;
+    width: auto;
+    float: left;
+}
+#logout a{
+     font-size : 20px;
+    margin-top: -48px;
+    margin-right: 40px;
+    float : right;
+    text-decoration: none;
+    color: cyan;
+}
+#logout .logout1 img{
+    height : 25px;
+    width : 25px;
+
+    margin-right: 70px;
+    float : right;
+}
+
+body{
+    background-color: lightsteelblue;
+}
